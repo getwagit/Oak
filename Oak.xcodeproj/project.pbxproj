@@ -385,6 +385,7 @@
 				A66B337E1D6B369A00FCA8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A66B337F1D6B369A00FCA8EF /* Build configuration list for PBXNativeTarget "OakTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +394,7 @@
 				A66B33811D6B369A00FCA8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
