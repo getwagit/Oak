@@ -120,14 +120,14 @@ public class Oak {
      Logging priority.
      */
     public struct Priority {
-        static let VERBOSE = 2;
-        static let DEBUG = 3;
-        static let INFO = 4;
-        static let WARN = 5;
-        static let ERROR = 6;
-        static let ASSERT = 7;
-        
-        static func asString(priority: Int) -> String {
+        public static let VERBOSE = 2;
+        public static  let DEBUG = 3;
+        public static  let INFO = 4;
+        public static  let WARN = 5;
+        public static  let ERROR = 6;
+        public static  let ASSERT = 7;
+
+        public static func asString(priority: Int) -> String {
             switch priority {
             case VERBOSE: return "V"
             case DEBUG: return "D"
