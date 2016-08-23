@@ -47,7 +47,7 @@ struct ProdTree: OakTree {
     }
 }
 ```
-Plant trees depending on your environment.
+Plant trees depending on your environment: Add `-DDEBUG` to the debug entry at Build settings -> Swift Compiler - Custom Flags -> Other Swift Flags.
 ```Swift
 #if DEBUG
   Oak.plant(Oak.DebugTree())
