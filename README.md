@@ -55,3 +55,7 @@ Plant trees depending on your environment: Add `-DDEBUG` to the debug entry at B
   Oak.plant(ProTree())
 #endif
 ```
+
+## License 
+Most of this code is licensed under MIT.
+The code to demangle stack traces is taken from the Swift.org project, which is licensed under Apache 2.0 with Runtime Library Exception.
