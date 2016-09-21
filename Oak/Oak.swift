@@ -24,7 +24,7 @@ public class Oak {
      Lumber all trees.
      */
     public static func lumber() {
-        
+        forest.removeAll()
     }
     
     /**
