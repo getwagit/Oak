@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E86CEF56B00ED8CB31FD36E /* TestFileX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86CF0A4F90260A2D8DFDC7 /* TestFileX.swift */; };
 		A66B336C1D6B369A00FCA8EF /* Oak.h in Headers */ = {isa = PBXBuildFile; fileRef = A66B336B1D6B369A00FCA8EF /* Oak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A66B33731D6B369A00FCA8EF /* Oak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66B33681D6B369A00FCA8EF /* Oak.framework */; };
 		A66B33781D6B369A00FCA8EF /* OakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66B33771D6B369A00FCA8EF /* OakTests.swift */; };
 		A66B33831D6B36CF00FCA8EF /* Oak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66B33821D6B36CF00FCA8EF /* Oak.swift */; };
+		A6D1C00E1D9279C1003905BA /* Demangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1C00D1D9279C1003905BA /* Demangle.swift */; };
+		A6D1C0101D927C8F003905BA /* TestTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1C00F1D927C8F003905BA /* TestTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E86CF0A4F90260A2D8DFDC7 /* TestFileX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFileX.swift; sourceTree = "<group>"; };
 		A66B33681D6B369A00FCA8EF /* Oak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Oak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66B336B1D6B369A00FCA8EF /* Oak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oak.h; sourceTree = "<group>"; };
 		A66B336D1D6B369A00FCA8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +35,8 @@
 		A66B33771D6B369A00FCA8EF /* OakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OakTests.swift; sourceTree = "<group>"; };
 		A66B33791D6B369A00FCA8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A66B33821D6B36CF00FCA8EF /* Oak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oak.swift; sourceTree = "<group>"; };
+		A6D1C00D1D9279C1003905BA /* Demangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demangle.swift; sourceTree = "<group>"; };
+		A6D1C00F1D927C8F003905BA /* TestTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 				A66B336B1D6B369A00FCA8EF /* Oak.h */,
 				A66B336D1D6B369A00FCA8EF /* Info.plist */,
 				A66B33821D6B36CF00FCA8EF /* Oak.swift */,
+				A6D1C00D1D9279C1003905BA /* Demangle.swift */,
 			);
 			path = Oak;
 			sourceTree = "<group>";
@@ -85,6 +92,8 @@
 			children = (
 				A66B33771D6B369A00FCA8EF /* OakTests.swift */,
 				A66B33791D6B369A00FCA8EF /* Info.plist */,
+				A6D1C00F1D927C8F003905BA /* TestTree.swift */,
+				4E86CF0A4F90260A2D8DFDC7 /* TestFileX.swift */,
 			);
 			path = OakTests;
 			sourceTree = "<group>";
@@ -199,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D1C00E1D9279C1003905BA /* Demangle.swift in Sources */,
 				A66B33831D6B36CF00FCA8EF /* Oak.swift in Sources */,
+				4E86CEF56B00ED8CB31FD36E /* TestFileX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66B33781D6B369A00FCA8EF /* OakTests.swift in Sources */,
+				A6D1C0101D927C8F003905BA /* TestTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
