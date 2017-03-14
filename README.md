@@ -4,7 +4,7 @@ A simple logging library for Swift, inspired by [Timber](https://github.com/Jake
 ## Installation with Carthage
 Add the following to your `Cartfile`:
 ```
-github "getwagit/Oak" ~> 1.0 
+github "getwagit/Oak" ~> 2.0.1 
 ```
 
 ## Debug Usage
