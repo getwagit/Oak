@@ -1,5 +1,5 @@
 # Oak
-A most simple logging library for iOS that tries to bring the greatness of [Timber](https://github.com/JakeWharton/timber) to Swift.
+A simple logging library for Swift, inspired by [Timber](https://github.com/JakeWharton/timber).
 
 ## Installation with Carthage
 Add the following to your `Cartfile`:
