@@ -1,14 +1,15 @@
 ![Oak](logo.png)
 
-Oak is a simple logging library for Swift, inspired by [Timber](https://github.com/JakeWharton/timber).
+# Oak 
+A simple logging library for Swift, inspired by [Timber](https://github.com/JakeWharton/timber).
 
-# Installation with Carthage
+## Installation with Carthage
 Add the following to your `Cartfile`:
 ```
 github "getwagit/Oak" ~> 2.0.1 
 ```
 
-# Usage
+## Usage
 For simple debug usage plant the `DebugTree` in your AppDelegate.
 ```Swift
 Oak.plant(Oak.DebugTree())
@@ -29,7 +30,7 @@ Oak.wtf("Wtf Log")
 Oak.e("Oh no! An error!", NSThread.callStackSymbols())
 ```
 
-# Advanced
+## Advanced
 You can create your own trees to specify how logging should be done.
 ```Swift
 struct ProdTree: OakTree {
