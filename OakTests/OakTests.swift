@@ -32,17 +32,17 @@ class OakTests: XCTestCase {
         let testMessage = "This is a test message"
         
         Oak.v(testMessage + "v")
-        XCTAssert(testTree.lastMessage == testMessage + "v", "Verbose message did not match")
+        XCTAssertEqual(testTree.lastMessage, testMessage + "v", "Verbose message did not match")
         Oak.d(testMessage + "d")
-        XCTAssert(testTree.lastMessage == testMessage + "d", "Debug message did not match")
+        XCTAssertEqual(testTree.lastMessage, testMessage + "d", "Debug message did not match")
         Oak.i(testMessage + "i")
-        XCTAssert(testTree.lastMessage == testMessage + "i", "Info message did not match")
+        XCTAssertEqual(testTree.lastMessage, testMessage + "i", "Info message did not match")
         Oak.w(testMessage + "w")
-        XCTAssert(testTree.lastMessage == testMessage + "w", "Warn message did not match")
+        XCTAssertEqual(testTree.lastMessage, testMessage + "w", "Warn message did not match")
         Oak.e(testMessage + "e")
-        XCTAssert(testTree.lastMessage == testMessage + "e", "Error message did not match")
+        XCTAssertEqual(testTree.lastMessage, testMessage + "e", "Error message did not match")
         Oak.wtf(testMessage + "wtf")
-        XCTAssert(testTree.lastMessage == testMessage + "wtf", "Assert message did not match")
+        XCTAssertEqual(testTree.lastMessage, testMessage + "wtf", "Assert message did not match")
     }
     
     func testStackTrace() {
