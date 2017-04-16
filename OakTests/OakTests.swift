@@ -53,4 +53,19 @@ class OakTests: XCTestCase {
         NSLog(testTree.lastStackTree!)
         XCTAssert(testTree.lastStackTree == testStackAssert, "Stack trace does not match: \(testTree.lastStackTree!)")
     }
+
+    func testErrorLogs() {
+        Oak.v(TestError.test(uniqueTestInput: "v"))
+        XCTAssertEqual(testTree.lastMessage, TestError.localizedTestDescription + "v", "Verbose error message did not match")
+        Oak.d(TestError.test(uniqueTestInput: "d"))
+        XCTAssertEqual(testTree.lastMessage, TestError.localizedTestDescription + "d", "Debug error message did not match")
+        Oak.i(TestError.test(uniqueTestInput: "i"))
+        XCTAssertEqual(testTree.lastMessage, TestError.localizedTestDescription + "i", "Info error message did not match")
+        Oak.w(TestError.test(uniqueTestInput: "w"))
+        XCTAssertEqual(testTree.lastMessage, TestError.localizedTestDescription + "w", "Warn error message did not match")
+        Oak.e(TestError.test(uniqueTestInput: "e"))
+        XCTAssertEqual(testTree.lastMessage, TestError.localizedTestDescription + "e", "Error error message did not match")
+        Oak.wtf(TestError.test(uniqueTestInput: "wtf"))
+        XCTAssertEqual(testTree.lastMessage, TestError.localizedTestDescription + "wtf", "Assert error message did not match")
+    }
 }

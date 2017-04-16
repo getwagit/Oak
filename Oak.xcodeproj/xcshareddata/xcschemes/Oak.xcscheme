@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A66B33671D6B369A00FCA8EF"
+               BlueprintIdentifier = "AFE46D8B61432E30CC784C119C5EF0F8"
                BuildableName = "Oak.framework"
                BlueprintName = "Oak"
                ReferencedContainer = "container:Oak.xcodeproj">
