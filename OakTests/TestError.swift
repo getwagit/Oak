@@ -1,6 +1,6 @@
 //
-// Created by Markus Riegel on 16.04.17.
-// Copyright (c) 2017 wag it GmbH. All rights reserved.
+// Copyright (c) 2017 wag it GmbH.
+// License: MIT
 //
 
 import Foundation
