@@ -6,7 +6,7 @@ A simple logging library for Swift, inspired by [Timber](https://github.com/Jake
 ## Installation with Carthage
 Add the following to your `Cartfile`:
 ```
-github "getwagit/Oak" ~> 2.0.1 
+github "getwagit/Oak" ~> 2.1.0 
 ```
 
 ## Usage
@@ -26,21 +26,18 @@ Oak.i("Info Log")
 Oak.w("Warn Log")
 Oak.e("Error Log")
 Oak.wtf("Wtf Log")
-// You can also pass stack traces to each logging method:
-Oak.e("Oh no! An error!", NSThread.callStackSymbols())
 ```
 
 ## Advanced
 You can create your own trees to specify how logging should be done.
 ```Swift
 struct ProdTree: OakTree {
-    func log(priority: Int, _ file: String, _ function: String, _ line: Int, _ message: String, _ trace: [String]?) {
+    func log(priority: Int, _ file: String, _ function: String, _ line: Int, _ message: String) {
         if(priority < Oak.Priority.ERROR) { // Use the priority to filter logs.
             return
         }
         async({ // Dispatch logs asynchronously using Oak's queue.
             let fileName = self.fileName(file) // Helper method to extract the file name.
-            let stack = self.prepareStack(stack) // Helper method to reformat the stack trace.
             let priorityName = Oak.Priority.asString(priority) // Convert priority to a String.
             
             // ...
@@ -62,5 +59,4 @@ Plant trees depending on your environment: Add `-DDEBUG` to the debug entry at B
 Contributions are welcome! Please use the branch `develop` as base/target. If you modifiy the `project.pbxproj` file, use [xUnique](https://github.com/truebit/xUnique).
 
 ## License 
-Most of this code is licensed under MIT.
-The code to demangle stack traces is taken from the Swift.org project, which is licensed under Apache 2.0 with Runtime Library Exception.
+Oak is available under the MIT license.
