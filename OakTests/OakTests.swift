@@ -44,15 +44,6 @@ class OakTests: XCTestCase {
         Oak.wtf(testMessage + "wtf")
         XCTAssertEqual(testTree.lastMessage, testMessage + "wtf", "Assert message did not match")
     }
-    
-    func testStackTrace() {
-        let testFile = TestFileX()
-        let testStackAssert = "\n\tOak.TestFileX.logMessageWithStackTrace\n\tOakTests.OakTests.testStackTrace"
-        testFile.logMessageWithStackTrace("abcde")
-        
-        NSLog(testTree.lastStackTree!)
-        XCTAssert(testTree.lastStackTree == testStackAssert, "Stack trace does not match: \(testTree.lastStackTree!)")
-    }
 
     func testErrorLogs() {
         Oak.v(TestError.test(uniqueTestInput: "v"))

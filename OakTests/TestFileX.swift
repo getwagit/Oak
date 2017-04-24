@@ -11,8 +11,4 @@ class TestFileX {
     func logMessage(_ msg: String) {
         Oak.d(msg)
     }
-    
-    func logMessageWithStackTrace(_ msg: String) {
-        Oak.d(msg, Thread.callStackSymbols)
-    }
 }
