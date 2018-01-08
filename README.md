@@ -3,10 +3,19 @@
 # Oak 
 A simple logging library for Swift, inspired by [Timber](https://github.com/JakeWharton/timber).
 
-## Installation with Carthage
+## Installation
+
+#### Carthage
 Add the following to your `Cartfile`:
 ```
 github "getwagit/Oak" ~> 2.0.1 
+```
+
+#### CocoaPods
+
+Integrate Oak into your `Podfile`
+```
+pod 'Oak', '~> 2.0.1'
 ```
 
 ## Usage
