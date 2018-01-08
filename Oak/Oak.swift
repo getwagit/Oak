@@ -103,11 +103,17 @@ public class Oak {
      The default tree for logging on the main thread.
      */
     public struct DebugTree: OakTree {
+        let dateFormatter: DateFormatter = {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "H:m:ss.SSSS"
+            return dateFormatter
+        }()
+        
         public func log(_ priority: Int, _ file: String, _ function: String, _ line: Int, _ message: String) {
-            var wood = Priority.asString(priority) + "/"
-            wood += fileName(file) + "[" + String(line) + "]"
-            wood += " " + function +  ": " + message
-            NSLog(wood)
+            print("\(dateFormatter.string(from: Date())) " +
+                "\(Priority.asString(priority))/" +
+                "\(fileName(file))[\(String(line))] " +
+                "\(function): \(message)")
         }
         
         public init(){}

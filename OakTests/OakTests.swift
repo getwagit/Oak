@@ -25,7 +25,7 @@ class OakTests: XCTestCase {
         let testFile = TestFileX()
         testFile.logMessage("abcde")
 
-        XCTAssert(testTree.lastFileName == "TestFileX", "Wrong filename: \(testTree.lastFileName)")
+        XCTAssert(testTree.lastFileName == "TestFileX", "Wrong filename: \(String(describing: testTree.lastFileName))")
     }
     
     func testMessage() {
